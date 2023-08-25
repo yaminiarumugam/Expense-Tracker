@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracking App</h1>
+        <main>
+        <form id="form">
+            <div class='field-group'>
+                <div class='field'>
+                    <label for='expenses-name'>Expenses</label>
+                    <input type='text' placeholder='e.g. rent' id='expenses-name'  />
+                </div>
+                <div class='field'>
+                    <label for='expenses-amount'>Amount</label>
+                    <input type='number' placeholder='e.g. 5000' id='expenses-amount'  />
+                </div>
+            </div>
+            <button type='submit' class='btn-submit'>
+                Submit
+            </button>
+        </form>
+        <h1>Expenseslist</h1>  
+        <ul class='expenses-list'>
+            <!-- <li class='item'>
+                <span>rent</span>
+                <span>5000</span>
+                <span>
+                    <i class='fas fa-edit'></i>
+                    <i class='fas fa-trash-alt'></i>
+                </span>
+            </li> -->
+        </ul>
+        <button type='button' class='btn-delete'>ClearItem</button>
+        </main>
+        <h2>Total Expenses = <span id="total-amount">5000</span></h2>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>
